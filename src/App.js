@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { CounterIncrementQuery } from './counter/counterActionTypes.js'
-import { Consumer } from './initContext.js';
+import { CounterIncrementQuery } from './actions/counter/counterActionTypes.js'
+import { Consumer } from './appContext.js';
 
 export default class App extends Component {
   render() {

@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { MediatorProvider } from './initContext';
+import * as appContext from './appContext';
+import { MediatorProvider } from './MediatorProvider';
 
 const MediatorApp = () => (
-    <MediatorProvider>
+    <MediatorProvider {...appContext}>
         <App />
     </MediatorProvider>
 );

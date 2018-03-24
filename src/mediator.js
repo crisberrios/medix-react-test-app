@@ -1,7 +1,6 @@
-import bindCounterActions from './counter/counterActions'
-import { Mediator } from 'medix'
+import registerCounterActions from "./actions/counter/counterActions";
+import { Mediator } from "medix";
 
-const mediator = new Mediator()
-bindCounterActions(mediator)
-
-export default mediator
+const mediator = new Mediator();
+registerCounterActions(mediator);
+export default mediator;

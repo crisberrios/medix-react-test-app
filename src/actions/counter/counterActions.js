@@ -1,5 +1,5 @@
 import { CounterIncrementQuery } from './counterActionTypes.js'
-import { MutateStateCommand, GetStoreQuery } from '../coreActionTypes'
+import { MutateStateCommand, GetStoreQuery } from '../../MediatorProvider'
 
 export default function (mediator) {
   const getIncrementCounter = {
